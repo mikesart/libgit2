@@ -234,7 +234,7 @@ extern int git_path_join_unrooted(
 /**
  * Clean up path, prepending base if it is not already rooted.
  */
-extern int git_path_prettify(git_buf *path_out, const char *path, const char *base);
+GIT_EXTERN(int) git_path_prettify(git_buf *path_out, const char *path, const char *base);
 
 /**
  * Clean up path, prepending base if it is not already rooted and
